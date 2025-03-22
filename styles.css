@@ -1,0 +1,785 @@
+:root {
+    --hover-color: black;
+    --text-color:#6e6e6e;
+    --h2-text-color:black;
+    --hero-text-color: black;
+    --tab-text-color:white;
+    --background-color: #f8f8f8;
+    --header-background: #F2F2F2;
+    --header-border: #e6e6e6;
+}
+
+body {
+    font-family: 'Lineto Brown', sans-serif;
+    font-size: 14px;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Lineto Brown';
+    src: url('fonts/lineto-brown-pro-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lineto Brown';
+    src: url('fonts/lineto-brown-pro-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lineto Brown';
+    src:url('fonts/lineto-brown-pro-light.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+ol, ul, menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li:hover {
+    unicode-bidi: isolate;
+    color: var(--hover-color);
+}
+
+header {
+    border-bottom: 1px solid var(--header-border);
+}
+
+.top-header {
+    background-color: var(--header-background);
+    padding: 5px;
+    border-bottom: 1px solid var(--header-border);
+    font-weight: bolder;
+}
+
+.main-header {
+    background-color: var(--header-background);
+    padding: 20px 0;
+    color:var(--h2-text-color);
+    font-size: 17px;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1px;
+}
+
+.ribbon-header{
+    background-color: #d6f5f0;
+    padding: 0.001% 0;
+    text-align: center;
+    color: var(--hero-text-color);
+    font-weight: bold;
+}
+
+.ribbon-header a:link{
+    color:var(--hero-text-color);
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav ul, .right-nav ul, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.left-nav ul li, .right-nav ul li{
+    display: inline;
+}
+
+.left-nav ul li a, .right-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.left-nav ul li a:hover, .right-nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+.sh-logo img {
+    height: 20px;
+    
+}
+
+.hero-image{
+    width: 464px;
+    height: 464px;
+    position: relative;
+    left: -15%;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.hero-container {
+    display:flex;
+    justify-content: center;
+
+}
+
+.tab-container{
+    height: 472px;
+    width: 100%;
+    padding: 1.5% 0px;
+    justify-content: center;
+    background-image: url('img/hero-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero-text {
+    padding: 2% 0px;
+    font-size: 40px;
+    color: var(--hero-text-color);
+    text-align: left;
+    align-items: right;
+    line-height: 1.1;
+    position:absolute;
+    right: 20%;
+}
+
+
+.hero-text h1{
+    font-size: 28px;
+    color: var(--hero-text-color);
+}
+
+.hero-text h2{
+    font-size:52px;
+    font-weight: 500;
+}
+
+.hero-text p{
+    font-size:16px;
+}
+
+.hero-text-tab {
+    font-size: 40px;
+    color: var(--tab-text-color);
+    align-items: right;
+    text-align: right;
+    font-weight: normal;
+    line-height: 1.1;
+    position: absolute;
+    left: 20%;
+
+}
+
+.hero-text-tab h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text-tab p{
+    font-size:16px;
+}
+
+.hero-text-tab h2{
+    font-size:50px;
+    font-weight: bold;
+}
+
+.hero-text-tab a:link{
+    color:var(--tab-text-color);
+}
+
+
+
+.hero-button{
+    background-color: #00fdcf;
+    color: black;
+    padding: 3% 8%;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logi-bg-container {
+    opacity: 10%;
+    background-image: url(img/bg-logo-section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 1506px;
+    height:636px;
+    left: 10%;
+    bottom: 250%;
+    top: 0%;
+}
+
+.product-cards{
+    display: inline-block;
+    position: relative;
+    bottom: 250px;
+
+}
+
+.product-card-1{
+    height:733px;
+    width: 586px;
+    background-color: blue;
+    border-radius: 20px;
+    background-image: url(img/logitech-stylus-zoom.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 20%;
+}
+
+.product-card-1:hover,.product-card-2:hover,.product-card-3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.product-card-2{
+    height:275px;
+    width: 220px;
+    background-color: pink;
+    background-position: top;
+    border-radius: 20px;
+    background-image: url(img/keyboard-pink.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 32%;
+    bottom: 320px;
+}
+
+
+.product-card-3{
+    height:427.5px;
+    width: 342px;
+    background-color: purple;
+    border-radius: 20px;
+    background-image: url(img/logitech-stylus-zoom.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 44%;
+    bottom: 150px;
+}
+
+.product-button{
+    font-size: 16px;
+    color:var(--hover-color);
+    font-weight: bold;
+}
+
+.card-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+    bottom:500px;
+}
+
+.card-text{
+    color: var(--hero-text-color);
+    text-align: left;
+    padding: 130% 0 0;
+}
+
+.card-text h3{
+    font-size: 42px;
+    line-height: 1;
+    font-weight:500;
+}
+
+.card-text p{
+    font-size: 16.9px;
+    text-wrap: wrap;
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+
+
+.discover-elements{
+    display: inline-block;
+    position: relative;
+}
+
+.discover-elements .header-text{
+    font-size: 18px;
+    color: var(--hero-text-color);
+    text-align: start;
+    padding: 1% 0 1% 17%;
+    font-weight: 500;
+    font-weight: bold;
+
+}
+
+
+.discover-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding:0 0 150 2px;
+    padding-bottom: 180px;
+}
+
+.discover-container .discover-text{
+    font-size: 25px;
+    color: var(--hero-text-color);
+    text-align: left;
+    padding: 110% 0 5% 10%;
+    font-weight: 500;
+}
+
+.discover-container .discover-text-2{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    text-align: left;
+    padding: 110% 0 5% 10%;
+    font-weight: 500;
+}
+
+.discover-card-1{
+    height: 580px;
+    width: 464px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(img/category-card-keyboards.jpg);
+    align-items: center;
+    justify-content: space-between;
+    left:15%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.discover-card-1:hover, .discover-card-2:hover, .discover-card-3:hover, .discover-card-4:hover, .discover-card-5:hover, .discover-card-6:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+
+.discover-card-2{
+    height: 580px;
+    width: 464px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(img/category-card-mice.jpg);
+    align-items: center;
+    justify-content: space-between;
+    left:17%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.discover-card-3{
+    height: 580px;
+    width: 464px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(img/category-card-webcams.jpg);
+    align-items: center;
+    justify-content: space-between;
+    left:19%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.discover-card-4{
+    height: 580px;
+    width: 464px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(img/girl-using-mouse-business-desktop-2.png);
+    align-items: center;
+    justify-content: space-between;
+    left:15%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.discover-card-5{
+    height: 580px;
+    width: 464px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(img/boy-playing-mandalorian-desktop-2.png);
+    align-items: center;
+    justify-content: space-between;
+    left:17%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.discover-card-6{
+    height: 580px;
+    width: 464px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(img/adult-child-education-desktop-2.png);
+    align-items: center;
+    justify-content: space-between;
+    left:19%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.planet-elements{
+    width: 100%;
+    height:1200px;
+    background-color: #0d3a38;
+    display:inline-block;
+    position: relative;
+    background-size: cover;
+    
+}
+
+
+.planet-container{
+    padding-top: 120px;
+    gap:17px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.planet-header-text{
+    line-height: 1;
+}
+
+.planet-h-txt-h1{
+    font-size: 28px;
+    text-align: center;
+    padding-top: 40px;
+    color:white;
+}
+
+.planet-sh-txt-h2{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    color:white;
+}
+
+.planet-b-txt-p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    color:white;  
+}
+
+.planet-card-1:hover, .planet-card-2:hover, .planet-card-3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.planet-card-1{
+    width: 464px;
+    height: 580px;
+    background-image: url(img/planet.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    left:10%;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.planet-card-1 p{
+    font-size: 30px;
+    padding-top: 480px;
+    padding-left: 20px;
+    color:white;
+}
+
+.planet-card-2{
+    width: 464px;
+    height: 580px;
+    background-image: url(img/people.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.planet-card-2 p{
+    font-size: 30px;
+    padding-top: 480px;
+    padding-left: 20px;
+    color:white;
+}
+
+.planet-card-3{
+    width: 464px;
+    height: 580px;
+    background-image: url(img/recycle.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.planet-card-3 p{
+    font-size: 30px;
+    padding-top: 480px;
+    padding-left: 20px;
+    color:black;
+}
+
+.grid-elements p{
+    font-size: 18px;
+    color: var(--hero-text-color);
+    padding-left: 210px;
+    padding-top: 60px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    padding-right: 11%;
+    padding-left: 11%;
+    align-content: space-around;
+}
+
+.item {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: black;
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: var(--header-background);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.keyboard{
+    background-image: url(img/keyboards.png);
+}
+
+.mouse{
+    background-image: url(img/mice.png);
+}
+
+.conference-camera{
+    background-image: url(img/conference-room-cameras.png);
+}
+
+.headset{
+    background-image:url(img/headsets-earbuds.png)
+}
+
+.webcam{
+    background-image: url(img/webcams.png);
+}
+
+.ipad-keyboard-case{
+    background-image: url(img/mobile-devices.png);
+}
+
+.combo{
+    background-image:url(img/combos.png);
+
+}
+
+.speaker{
+    background-image: url(img/speakers.png);
+}
+
+.driving{
+    background-image: url(img/driving-simulation.png);
+}
+
+.lighting{
+    background-image:url(img/lighting.png);
+}
+
+.microphone{
+    background-image: url(img/microphones.png);
+}
+
+.refurbished{
+    background-image: url(img/refurbished-products.png);
+}
+
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    padding-top: 300px;
+    padding-left: 11%;
+    justify-content: space-around;
+    align-content: start;
+}
+
+.benefit-item {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.benefit-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.benefit-item h3 {
+    font-size: 18px;
+    color: black;
+}
+
+.benefit-item p {
+    font-size: 14px;
+    color: #6e6e6e;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+
+    .hero-text {
+        font-size: 24px;
+        text-align: center;
+        right: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .tab-container{
+        align-items: center;
+        background-color:rgb(27, 27, 27);
+        background-image:url(img/hero-tablet.jpg);
+        background-position-x: 50%, 50%;
+        background-position-y: 50%, 50%;
+        background-repeat:no-repeat, no-repeat;
+        background-size: cover, cover;
+        border-bottom-color: rgb(47, 49, 50);
+        border-bottom-style: solid;
+        border-bottom-width: 0px;
+        border-left-color: rgb(47, 49, 50);
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-color: rgb(47, 49, 50);
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-color: rgb(47, 49, 50);
+        border-top-style: solid;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        display: grid;
+        font-family: Brown, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        height: 472px;
+        line-height: 16.8px;
+        margin-bottom: 0px;
+        min-height: 472px;
+        position: relative;
+        scroll-behavior: smooth;
+        tab-size: 4;
+        text-size-adjust: 100%;
+        unicode-bidi: isolate;
+        width: 890px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text-tab {
+        font-size: 24px;
+        text-align: center;
+        left: 0;
+    }
+
+    .hero-text-tab h1 {
+        font-size: 18px;
+    }
+
+    .hero-text-tab h2 {
+        font-size: 32px;
+    }
+
+    .product-card-1, .product-card-2, .product-card-3 {
+        width: 100%;
+        height: auto;
+        left: 0;
+        bottom: 0;
+    }
+
+    .discover-card-1, .discover-card-2, .discover-card-3, .discover-card-4, .discover-card-5, .discover-card-6 {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+
+    .planet-card-1, .planet-card-2, .planet-card-3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5%;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+    }
+}
+
